@@ -8,7 +8,7 @@ app.get('/', function(request, response) {
   // read content of the file index.html. The content returned
   // is a buffer unless the encoding is included (string returned)
   var content = fs.readFileSync('index.html');
-  response.send(content.toString("utf-8");
+  response.send(content.toString("utf-8"));
 });
 
 var port = process.env.PORT || 5000;
